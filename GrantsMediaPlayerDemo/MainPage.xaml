@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="GrantsMediaPlayerDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GrantsMediaPlayerDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <MediaPlayerElement x:Name="mediaPlayerElement" AreTransportControlsEnabled="True" Height="Auto" Width="Auto"/>
+        
+        <CommandBar RequestedTheme="Dark" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" IsDynamicOverflowEnabled="False">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="openFile" Icon="Library" Label="Open File" ToolTipService.ToolTip="Open File" Click="openFile_Click"/>
+            <AppBarButton x:Name="playFile" Icon="Play" Label="Play File" ToolTipService.ToolTip="Play File" Click="playFile_Click"/>
+            <AppBarButton x:Name="pauseFile" Icon="Pause" Label="Pause File" ToolTipService.ToolTip="Pause File" Click="pauseFile_Click"/>
+            <AppBarButton x:Name="stopFile" Icon="Stop" Label="Stop File" ToolTipService.ToolTip="Stop File" Click="stopFile_Click"/>
+            <AppBarButton x:Name="pictureSize" Icon="Switch" Label="Resize Video" Click="pictureSize_Click"/>
+        </CommandBar>
+        
+
+
+
+
+
+    </Grid>
+</Page>
